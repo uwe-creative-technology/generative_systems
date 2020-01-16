@@ -29,7 +29,7 @@ https://www.youtube.com/watch?v=MwHQx9BrHQc
 * Cellular Automata
 
 ![screenshot](activeDrawing/screenshot-activeDrawing.png)
-![screenshot](activeDrawing/screenshot-CA.png)
+![screenshot](cellularAutomata/screenshot-CA.png)
 
 
 

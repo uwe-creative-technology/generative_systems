@@ -12,5 +12,4 @@ click and draw to draw with the mouse, see your drawing break up and decay over 
 
 the class moving line is used to create hundreds of small lines, tracking the movement of the mouse. over time the x,y end points of the lines are progressivly altered using simple stochastic randomness, creating organic looking complexity.
 
-![screenshot](cellularAutomata/screenshot-activeDrawing.png)
-![screenshot](activeDrawing/screenshot-activeDrawing.png)
+![screenshot]((activeDrawin/screenshot-activeDrawing.png)

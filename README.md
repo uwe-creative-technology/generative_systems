@@ -123,3 +123,7 @@ markov chains : http://setosa.io/ev/markov-chains/
 https://www.kadenze.com/courses/advanced-generative-art-and-computational-creativity/info
 https://www.oreilly.com/learning/generative-adversarial-networks-for-beginners
 http://blog.hvidtfeldts.net/index.php/generative-art-links/
+
+
+![screenshot]((activeDrawin/screenshot-activeDrawing.png)
+![screenshot](cellularAutomata/screenshot-CA3.png)
