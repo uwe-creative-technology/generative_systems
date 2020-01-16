@@ -1,4 +1,4 @@
-# Generative systems for Art and Design
+# Generative Systems for Art and Design
 ©2020 Dan Buzzo
 www.buzzo.com
 
