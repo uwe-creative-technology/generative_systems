@@ -1,5 +1,4 @@
-# Generative_systems
-Generative Systems for Art and Design course materials
+# Generative_systems for Art and Design
 ©2020 Dan Buzzo
 www.buzzo.com
 

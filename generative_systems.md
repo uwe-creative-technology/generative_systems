@@ -1,9 +1,8 @@
-# Generative systems for Art and Design
+# Generative Systems for Art and Design
 ©2020 Dan Buzzo
 www.buzzo.com
 
-
-- [Generative systems for Art and Design](#generative-systems-for-art-and-design)
+- [Generative Systems for Art and Design](#generative-systems-for-art-and-design)
 - [6 main workshop sessions](#6-main-workshop-sessions)
   - [1 Visual expression: generative drawing, weaving and pattern making](#1-visual-expression-generative-drawing-weaving-and-pattern-making)
   - [2 Dice music - mozart and beyond](#2-dice-music---mozart-and-beyond)
