@@ -1,5 +1,5 @@
 /*
- Project Title: Cellular automata
+ Project Title: Cellular Automata
  Description:
  ©Daniel Buzzo 2020
  dan@buzzo.com
@@ -11,8 +11,13 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    // uncomment different rule sets to see different CA patterns
     rules= {0,0,0,1,1,1,1,0}; // pyramid CA
-    rules= {0,0,0,1,1,1,1,0}; // pyramid CA
+    //    rules= {0,0,1,1,0,1,1,0}; // pyramid grid CA
+    //    rules= {0,1,0,1,1,0,1,0}; // pyramid dark CA
+    //    rules= {1,0,1,1,0,1,1,0}; // pyramid light CA
+    //    rules= {1,0,1,0,0,1,0,1}; // pyramid light CA
+    
     generation = 1;
     onCol = ofColor(255);
     offCol = ofColor(0);
@@ -20,7 +25,6 @@ void ofApp::setup(){
     ofSetColor(onCol);
     ofSetBackgroundColor(0);
     screenImage.allocate(ofGetWidth(), ofGetHeight(), OF_IMAGE_GRAYSCALE);
-    
 }
 
 //--------------------------------------------------------------
@@ -30,15 +34,12 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    //if (generation==1){
-    ofSetColor(onCol);
     screenImage.setColor(ofGetWidth()/2, 0, onCol ); // set an initial pixel to be on
-    //}
     if (generation < ofGetHeight()-1){
         for(int i = 0; i<ofGetWidth()-1; i++){
             ofColor left = screenImage.getColor(i-1,generation-1) ; // get color of pixel
-            ofColor me = screenImage.getColor(i,generation-1) ; // get color of pixel
-            ofColor right = screenImage.getColor(i+1,generation-1) ; // get color of pixel
+            ofColor me = screenImage.getColor(i,generation-1) ;
+            ofColor right = screenImage.getColor(i+1,generation-1) ;
             if (applyRules(left, me, right)==1){
                 screenImage.setColor(i, generation, onCol);
             }
@@ -56,53 +57,8 @@ void ofApp::keyPressed(int key){
 }
 
 //--------------------------------------------------------------
-void ofApp::keyReleased(int key){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
-    
-}
-
-//--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
     screenImage.setColor(mouseX, mouseY, onCol);
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){
-    
 }
 
 //--------------------------------------------------------------

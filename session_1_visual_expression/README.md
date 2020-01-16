@@ -24,11 +24,12 @@ https://www.youtube.com/watch?v=MwHQx9BrHQc
 ### Stochastic processes
 
 * Random Walker
-
 * Markov Chain for drawing
-
 * Active Drawing
+* Cellular Automata
 
 ![screenshot](activeDrawing/screenshot-activeDrawing.png)
+![screenshot](activeDrawing/screenshot-CA.png)
+
 
 
