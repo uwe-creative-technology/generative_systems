@@ -39,7 +39,7 @@ walker::walker(){
     xyPoint = ofVec2f(ofGetWidth()/2, ofGetHeight()/2);
     walk.push_back(xyPoint);
     color = (255);
-    radius = 2;
+    radius = 1;
 }
 
 //--------------------------------------------------------------

@@ -1,5 +1,7 @@
 # Generative systems for Art and Design
-15 credit module
+©2020 Dan Buzzo
+www.buzzo.com
+
 
 - [Generative systems for Art and Design](#generative-systems-for-art-and-design)
 - [6 main workshop sessions](#6-main-workshop-sessions)
@@ -21,8 +23,8 @@
 ## 1 Visual expression: generative drawing, weaving and pattern making
 
 * Techniques: pattern, walkers, L systems & fractals, conway game of life
-* Ideas: generative video editing and paint. making state and extending temporal 'context'
-* Demo: stuff
+* Ideas: generative drawing, editing and pattern making. Making state and extending temporal 'context'
+* Demo: random walker, active drawing, Markov Chains
 * Examples: Annie Albers, Vera Molnar, Aaron, Jared Tarbell, Zach Lieberman
 
 ## 2 Dice music - mozart and beyond

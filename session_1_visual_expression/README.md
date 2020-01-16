@@ -1,6 +1,7 @@
 # Generative_systems
 Generative Systems for Art and Design course materials
-
+©2020 Dan Buzzo
+www.buzzo.com
 
 ## 1 Visual expression: generative drawing, weaving and pattern making
 
