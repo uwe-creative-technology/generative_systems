@@ -125,5 +125,5 @@ https://www.oreilly.com/learning/generative-adversarial-networks-for-beginners
 http://blog.hvidtfeldts.net/index.php/generative-art-links/
 
 
-![screenshot]((session_1_visual_expression/activeDrawing/screenshot-activeDrawing.png)
+![screenshot](session_1_visual_expression/activeDrawing/screenshot-activeDrawing.png)
 ![screenshot](session_1_visual_expression/cellularAutomata/screenshot-CA3.png)
