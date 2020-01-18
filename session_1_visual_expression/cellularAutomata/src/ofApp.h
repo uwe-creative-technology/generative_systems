@@ -1,5 +1,5 @@
 /*
- Project Title: Cellular automata
+ Project Title: Cellular Automata in 1 dimension
  Description:
  ©Daniel Buzzo 2020
  dan@buzzo.com
