@@ -121,15 +121,18 @@ markov chains : http://setosa.io/ev/markov-chains/
 
 http://www.complexification.net/gallery/machines/substrate/index.php
 
+
 ## extended reading
 
-https://www.kadenze.com/courses/advanced-generative-art-and-computational-creativity/info
-https://www.oreilly.com/learning/generative-adversarial-networks-for-beginners
-http://blog.hvidtfeldts.net/index.php/generative-art-links/
+* https://www.kadenze.com/courses/advanced-generative-art-and-computational-creativity/info
+* https://www.oreilly.com/learning/generative-adversarial-networks-for-beginners
+* http://blog.hvidtfeldts.net/index.php/generative-art-links/
+* Carl Lostrito.'Computational Drawing' 2019, Pub. Applied Research and Design
 
 
 ![screenshot](session_1_visual_expression/activeDrawing/screenshot-activeDrawing.png)
 ![screenshot](session_1_visual_expression/cellularAutomata/screenshot-CA3.png)
 ![screenshot](session_1_visual_expression/randomWalker/screenshot-randomWalker.png)
 ![screenshot](session_1_visual_expression/colorPalettes/screenshot-colorPalettes.png)
+![screenshot](session_1_visual_expression/drunkenAnt/screenshot-drunkenAnt.png)
 
