@@ -1,12 +1,15 @@
 # Generative Systems for Art and Design
-©2020 Dan Buzzo
-www.buzzo.com
+ ©2020 Dan Buzzo
+ www.buzzo.com
+
+
+ Examples built in C++ using openFrameworks (openframeworks.cc)
 
 ## 1 Visual expression: generative drawing, weaving and pattern making
 
 * Techniques: pattern, walkers, L systems & fractals, conway game of life
 * Ideas: generative drawing, editing and pattern making. Making state and extending temporal 'context'
-* Demo: random walker, active drawing, Markov Chains
+* Demo: random walker, active drawing, Markov Chains built in c++ openFrameworks (openframeworks.cc)
 * Examples: Annie Albers, Vera Molnar, Aaron, Jared Tarbell, Zach Lieberman
 
 ## Reading
@@ -31,7 +34,9 @@ https://www.youtube.com/watch?v=MwHQx9BrHQc
 ![screenshot](activeDrawing/screenshot-activeDrawing.png)
 ![screenshot](cellularAutomata/screenshot-CA.png)
 ![screenshot](cellularAutomata2D/screenshot-CA2D.png)
-[!screenshot](randomWalker/screenshot-randomWalker.png)
+![screenshot](randomWalker/screenshot-randomWalker.png)
+![screenshot](colorPalettes/screenshot-colorPalettes.png)
+
 
 
 
