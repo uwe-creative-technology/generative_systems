@@ -1,13 +1,13 @@
-# Generative_systems
+# Generative Systems
 Generative Systems for Art and Design course materials
-// daniel buzzo 2020
-// buzzo.com
+ daniel buzzo 2020
+ buzzo.com
 
 ## 1 Visual expression: generative drawing, weaving and pattern making
 
 * Techniques: pattern, walkers, L systems & fractals, conway game of life
 * Ideas: generative video editing and paint. making state and extending temporal 'context'
-* Demo: Random 2D Walker
+* Demo: Random 2D Walker built in c++ openFrameworks (openframeworks.cc)
 
 ### Stochastic processes
 
@@ -22,5 +22,4 @@ For higher stochastic functions (more interlinked randomness and probabilty comp
 
 You can even extend the walker into 3D by adding a z direction that it could take; up, down, left, right, forwards, backwards. 
 
-[!screenshot](screenshot-randomWalker.png)
-
+![screenshot](screenshot-randomWalker.png)
