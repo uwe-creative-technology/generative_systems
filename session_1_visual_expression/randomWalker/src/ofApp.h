@@ -13,6 +13,7 @@
 #include "ofMain.h"
 
 class walker {
+    // walker class that contains vector of points and color and radius of each step
     ofPoint xyPoint;
     vector<ofPoint> walk;
     ofColor color;
@@ -35,5 +36,5 @@ public:
     void keyPressed(int key);
     void keyReleased(int key);
     
-    walker walker;
+    walker walker; // create a wallker object
 };
