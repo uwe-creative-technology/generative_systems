@@ -15,6 +15,12 @@ Generative Systems for Art and Design course materials
 
  adapted from example by Carl Lostrito in 'Computational Drawing'
 
+### controls
+
+* 'f' to toggle fullscreen
+* 'r' to reset ant
 
 
 ![screenshot](screenshot-drunkenAnt.png)
+![screenshot](screenshot-drunkenAnt2.png)
+
