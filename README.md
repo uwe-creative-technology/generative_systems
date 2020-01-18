@@ -80,6 +80,7 @@ CC1 Present video documentation and demonstration
 
 # Tool and system links
 
+* openframeworks.cc
 * processing.org
 * unity3D.com
 * maxMSP // Jitter
@@ -118,6 +119,8 @@ l systems: Prusinkiewicz, Lindenmayer - 1990 - The Algorithmic Beauty of Plants
 
 markov chains : http://setosa.io/ev/markov-chains/
 
+http://www.complexification.net/gallery/machines/substrate/index.php
+
 ## extended reading
 
 https://www.kadenze.com/courses/advanced-generative-art-and-computational-creativity/info
@@ -127,3 +130,6 @@ http://blog.hvidtfeldts.net/index.php/generative-art-links/
 
 ![screenshot](session_1_visual_expression/activeDrawing/screenshot-activeDrawing.png)
 ![screenshot](session_1_visual_expression/cellularAutomata/screenshot-CA3.png)
+![screenshot](session_1_visual_expression/randomWalker/screenshot-randomWalker.png)
+![screenshot](session_1_visual_expression/colorPalettes/screenshot-colorPalettes.png)
+
