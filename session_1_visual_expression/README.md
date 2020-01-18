@@ -26,10 +26,13 @@ https://www.youtube.com/watch?v=MwHQx9BrHQc
 * Random Walker
 * Markov Chain for drawing
 * Active Drawing
-* Cellular Automata
+* Cellular Automata 1D and 2D
 
 ![screenshot](activeDrawing/screenshot-activeDrawing.png)
 ![screenshot](cellularAutomata/screenshot-CA.png)
+![screenshot](cellularAutomata2D/screenshot-CA2D.png)
+[!screenshot](randomWalker/screenshot-randomWalker.png)
+
 
 
 
