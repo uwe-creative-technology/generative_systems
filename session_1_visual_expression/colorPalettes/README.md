@@ -21,6 +21,6 @@ The code creates a grid of tiles then uses our palette to set the colour of each
 You can experiment with different ways to generate our palette colours, or the tile sizes or shapes.
 You could  take this into 3D or animate the tiles.
 
-* press f to toggle full screen mode.
+* press 'f' to toggle full screen mode.
 
-[!screenshot](screenshot-colorPalettes.png)
+![screenshot](screenshot-colorPalettes.png)
