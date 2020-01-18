@@ -12,6 +12,44 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    resetAnt();
+}
+
+//--------------------------------------------------------------
+void ofApp::update(){
+    
+}
+
+//--------------------------------------------------------------
+void ofApp::draw(){
+    ofSetBackgroundAuto(false);
+    ofPoint nextPoint;
+    nextPoint = velocity + currentPoint;
+    currentLength += amplitude;
+    ofDrawLine(currentPoint, nextPoint);
+    currentPoint = nextPoint;
+    velocity = velocity.getRotated(angularAcceleration);
+    velocity.scale(amplitude+acceleration);
+    acceleration += ofRandom(-0.1, 0.1) * numDrinks;
+    angularAcceleration += ofRandom(-1, 1);
+}
+
+//--------------------------------------------------------------
+void ofApp::keyPressed(int key){
+    switch (key) {
+        case 'f':
+            ofToggleFullscreen();
+            break;
+        case 'r':
+            resetAnt();
+            break;
+        default:
+            break;
+    }
+}
+
+//--------------------------------------------------------------
+void ofApp::resetAnt(){
     startPoint.set(ofGetWidth()/2, ofGetHeight()/2);
     currentPoint = startPoint;
     currentLength = 0;
@@ -20,83 +58,9 @@ void ofApp::setup(){
     amplitude = 1;
     acceleration =0;
     angularAcceleration = ofRandom(-1, 1);
-    ofSetFrameRate(30);
+    ofSetFrameRate(60);
     numDrinks = 4;
-}
-
-//--------------------------------------------------------------
-void ofApp::update(){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::draw(){
     
-    ofSetBackgroundAuto(false);
-    ofPoint nextPoint;
-    //while (currentLength < length) {
-        nextPoint = velocity + currentPoint;
-        currentLength += amplitude;
-        ofDrawLine(currentPoint, nextPoint);
-        currentPoint = nextPoint;
-        velocity = velocity.getRotated(angularAcceleration);
-        velocity.scale(amplitude+acceleration);
-        acceleration += ofRandom(-0.1, 0.1) * numDrinks;
-        angularAcceleration += ofRandom(-1, 1);
-    //}
-}
-
-//--------------------------------------------------------------
-void ofApp::keyPressed(int key){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::keyReleased(int key){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
-
+    ofBackground(255);
+    ofSetColor(0);
 }
