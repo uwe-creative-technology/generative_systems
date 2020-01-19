@@ -1,26 +1,22 @@
+/*
+ Project Title:
+ Description: Music for home made airports: RandomAudio
+ ©Daniel Buzzo 2020
+ dan@buzzo.com
+ http://buzzo.com
+ https://github.com/danbz
+ 
+ sounds samples © Dan Carr : care of https://reverbmachine.com/blog/deconstructing-brian-eno-music-for-airports
+ 
+ */
 #include "ofApp.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-//    totalVoices = 7;
-//    for (int i = 0; i< totalVoices; i++){
-//        ofSoundPlayer voice;
-//        string path ="choir/Eno-Choir-0" + ofToString( i+1 ) + ".wav";
-//        cout << "loading " << path << endl;
-//        voice.load(path);
-//        voice.setMultiPlay(true);
-//        voices.push_back(voice);
-//    }
-    
-    totalVoices = 8;
-    for (int i = 0; i< totalVoices; i++){
-        ofSoundPlayer voice;
-        string path ="piano/Eno-Piano-0" + ofToString( i+1 ) + ".wav";
-        cout << "loading " << path << endl;
-        voice.load(path);
-        voice.setMultiPlay(true);
-        voices.push_back(voice);
-    }
+    // load vocal samples
+    // loadVocal();
+    // or uncomment this instead to load piano samples
+    loadPiano();
     
     tempo = 5000; // five seconds tempo
     b_autoPlay = false;
@@ -34,23 +30,28 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    for (int i = 0; i < totalVoices; i++){
-        ofDrawBitmapString( "voice " + ofToString( i +1 ) + ": " + ofToString( voices[i].isPlaying() ) + " " + ofToString( voices[i].getPosition() * 100 ) + " %", 10, (i + 1) * 20  );
-    }
-    
-    //    ofDrawBitmapString("auto play is " + ofToString( b_autoPlay) , 10, 160);
-    ofDrawBitmapString("tempo is " + ofToString( tempo ) + " ms" , 10, 180);
-    ofDrawBitmapString("press keys 1-7 to play voices \na to autoplay \n + /- to increase/decrease tempo", 10, 200);
-    
-    if (b_autoPlay){
+    if (b_autoPlay){ // choose a voice to play
         if (ofGetSystemTimeMillis() > currTime + tempo){
-            
             int num = ofRandom(totalVoices);
             voices[num].play();
             currTime = ofGetSystemTimeMillis();
             cout << "playing voice " << num << endl;
         }
     }
+    
+    // onscreen display of voices that are playing
+    for (int i = 0; i < totalVoices; i++){
+        if ( voices[i].isPlaying() ){
+            ofDrawRectangle(90, ((i)*20) + 7 , ofMap( voices[i].getPosition(), 0, 1, 20 , (ofGetWidth() -110) ), 18 ); // draw a while progress bar
+            ofDrawBitmapStringHighlight( "voice " + ofToString( i +1 ) + ": ", 10, (i + 1) * 20  );
+        } else {
+            ofDrawBitmapString( "voice " + ofToString( i +1 ) + ": ", 10, (i + 1) * 20  );
+        }
+    }
+    // on screen instructions
+    ofDrawBitmapString("auto play is " + ofToString( b_autoPlay) , 10, 200);
+    ofDrawBitmapString("tempo is " + ofToString( tempo ) + " ms" , 10, 220);
+    ofDrawBitmapString("press keys 1-7 to play voices \na to autoplay \n+ /- to increase/decrease tempo  \n'p' to load Piano Samples \n'v' to load vocal samples", 10, 240);
 }
 
 //--------------------------------------------------------------
@@ -80,7 +81,7 @@ void ofApp::keyPressed(int key){
             
         case '8':
             if (voices.size()>7){
-               voices[7].play();
+                voices[7].play();
             }
             break;
         case 'a':
@@ -98,6 +99,12 @@ void ofApp::keyPressed(int key){
             }
             break;
             
+        case 'v':
+            loadVocal();
+            break;
+        case 'p':
+            loadPiano();
+            break;
         default:
             break;
     }
@@ -108,47 +115,30 @@ void ofApp::keyReleased(int key){
     
 }
 
-//--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
-    
+void ofApp::loadVocal(){
+    // load vocal samples
+    totalVoices = 7;
+    voices.clear();
+    for (int i = 0; i< totalVoices; i++){
+        ofSoundPlayer voice;
+        string path ="choir/Eno-Choir-0" + ofToString( i+1 ) + ".wav";
+        cout << "loading " << path << endl;
+        voice.load(path);
+        voice.setMultiPlay(true);
+        voices.push_back(voice);
+    }
 }
 
-//--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
-    
+void ofApp::loadPiano(){
+    // load piano samples
+    totalVoices = 8;
+    voices.clear();
+    for (int i = 0; i< totalVoices; i++){
+        ofSoundPlayer voice;
+        string path ="piano/Eno-Piano-0" + ofToString( i+1 ) + ".wav";
+        cout << "loading " << path << endl;
+        voice.load(path);
+        voice.setMultiPlay(true);
+        voices.push_back(voice);
+    }
 }

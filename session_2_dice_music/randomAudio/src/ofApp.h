@@ -1,3 +1,15 @@
+/*
+Project Title:
+Description: Music for home made airports: RandomAudio
+©Daniel Buzzo 2020
+dan@buzzo.com
+http://buzzo.com
+https://github.com/danbz
+
+sounds samples © Dan Carr : care of https://reverbmachine.com/blog/deconstructing-brian-eno-music-for-airports
+
+*/
+
 #pragma once
 
 #include "ofMain.h"
@@ -11,15 +23,9 @@ class ofApp : public ofBaseApp{
 
 		void keyPressed(int key);
 		void keyReleased(int key);
-		void mouseMoved(int x, int y );
-		void mouseDragged(int x, int y, int button);
-		void mousePressed(int x, int y, int button);
-		void mouseReleased(int x, int y, int button);
-		void mouseEntered(int x, int y);
-		void mouseExited(int x, int y);
-		void windowResized(int w, int h);
-		void dragEvent(ofDragInfo dragInfo);
-		void gotMessage(ofMessage msg);
+    
+    void loadVocal();
+    void loadPiano();
     
     vector<ofSoundPlayer> voices;
     ofSoundPlayer voice1, voice2, voice3, voice4, voice5, voice6, voice7;
