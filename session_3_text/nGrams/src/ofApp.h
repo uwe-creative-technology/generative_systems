@@ -19,13 +19,11 @@ public:
     void setup();
     void update();
     void draw();
-    
     void keyPressed(int key);
-    
     
     bool does_exist(const vector< vector<string> >&  v, string item);
     void makeText();
-    
+    bool loadTextFromFile();
     
     string sourceText, markovText;
     vector<string> allGrams;
