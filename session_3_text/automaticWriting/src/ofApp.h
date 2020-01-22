@@ -1,6 +1,6 @@
 /*
  Project Title: Automatic writing based on sentence structures
- Description:
+ Description: a very simple linguistic parsing tree example
  ©Daniel Buzzo 2020
  dan@buzzo.com
  http://buzzo.com
