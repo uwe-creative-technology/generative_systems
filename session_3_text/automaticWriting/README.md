@@ -28,4 +28,4 @@ This system is similar to much more complex ones used in areas of 'computational
 ### dependencies
 * ofxTextSuite https://github.com/Furkanzmc/ofxTextSuite
 
-![screenshot](automaticWriting.png)
+![screenshot](screenshot-automaticWriting.png)
