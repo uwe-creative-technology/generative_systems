@@ -12,6 +12,11 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    ofSetFrameRate(60);
+    ofSetBackgroundAuto(false);
+    ofBackground(255);
+    ofSetColor(0);
+    
     resetAnt();
 }
 
@@ -22,8 +27,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofSetBackgroundAuto(false);
-    ofPoint nextPoint;
+    // ofEnableSmoothing();
     nextPoint = velocity + currentPoint;
     currentLength += amplitude;
     ofDrawLine(currentPoint, nextPoint);
@@ -58,9 +62,5 @@ void ofApp::resetAnt(){
     amplitude = 1;
     acceleration =0;
     angularAcceleration = ofRandom(-1, 1);
-    ofSetFrameRate(60);
-    numDrinks = 4;
-    
-    ofBackground(255);
-    ofSetColor(0);
+    numDrinks = 4; // set the drunkeness of our Ant path
 }

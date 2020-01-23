@@ -21,7 +21,7 @@ public:
     void keyPressed(int key);
     
     void resetAnt();
-    ofPoint startPoint, endPoint, currentPoint;
+    ofPoint startPoint, endPoint, currentPoint, nextPoint;
     float numDrinks, length, currentLength, acceleration, angularAcceleration, amplitude;
     ofVec2f velocity;
 };
