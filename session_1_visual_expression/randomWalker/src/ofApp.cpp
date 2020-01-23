@@ -24,7 +24,6 @@ void ofApp::update(){
 void ofApp::draw(){
     ofEnableBlendMode(OF_BLENDMODE_ADD);
     walker.draw();
-    ofDisableBlendMode();
 }
 
 //--------------------------------------------------------------
