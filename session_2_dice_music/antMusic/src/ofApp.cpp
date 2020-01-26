@@ -17,7 +17,7 @@ void ofApp::setup(){
     ofSetBackgroundAuto(false);
     // ofBackground(80, 64, 251); // mid blue
     ofBackground(33,25,175); // darkblue
-    ofSetColor(254,224,58);
+    ofSetColor(254,224,58); // yellow
     
     resetAnt();
     
@@ -34,6 +34,7 @@ void ofApp::setup(){
     settings.numBuffers = 4;
     settings.setOutListener(this);
     soundStream.setup(settings);
+    // ofSetFrameRate(12); // speed up and slow down the ant
 }
 
 //--------------------------------------------------------------
@@ -43,16 +44,19 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-     ofEnableSmoothing();
-    ofEnableAntiAliasing();
+    // ofEnableSmoothing();
+    // ofEnableAntiAliasing();
+    // update ant position and draw path
     nextPoint = velocity + currentPoint;
     currentLength += amplitude;
-    ofDrawLine(currentPoint, nextPoint);
+    ofDrawLine(currentPoint, nextPoint); // draw our ant path
     currentPoint = nextPoint;
     velocity = velocity.getRotated(angularAcceleration);
     velocity.scale(amplitude+acceleration);
     acceleration += ofRandom(-0.1, 0.1) * numDrinks;
     angularAcceleration += ofRandom(-1, 1);
+    
+    ofDrawBitmapString("drunken AntMusic \npress 'r' to reset ant \n'f' to toggle fullscreen", 20, 20);
 }
 
 //--------------------------------------------------------------
@@ -71,6 +75,7 @@ void ofApp::keyPressed(int key){
 
 //--------------------------------------------------------------
 void ofApp::resetAnt(){
+    // set the ant parameters up
     startPoint.set(ofGetWidth()/2, ofGetHeight()/2);
     currentPoint = startPoint;
     currentLength = 0;
@@ -79,7 +84,7 @@ void ofApp::resetAnt(){
     amplitude = 1;
     acceleration =0;
     angularAcceleration = ofRandom(-1, 1);
-    numDrinks = 4; // set the drunkeness of our Ant path
+    numDrinks = 1; // set the drunkeness of our Ant path
 }
 
 //--------------------------------------------------------------
