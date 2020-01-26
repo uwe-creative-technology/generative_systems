@@ -26,12 +26,13 @@ void ofApp::setup(){
     //        cartPositions.push_back(newCart);
     //        geoPositions.push_back(newPoint);
     //    }
-    ofBackground(33,25,175); // darkblue
+   // ofBackground(33,25,175); // darkblue
+    ofBackground(0);
     ofSetColor(254,224,58); // yellow
     // setup the path parameters we will draw with
-    geoPath.setStrokeWidth(6);
+    geoPath.setStrokeWidth(2);
     geoPath.setFilled(false);
-    ofColor red(255,0,0);
+    ofColor red(255,0,0, 200);
     geoPath.setColor(red);
     
     light.setPosition(1000, 2000, 2000);
@@ -178,9 +179,9 @@ ant::ant(){
     angularAcceleration = ofRandom(-1, 1);
     numDrinks = 0.5; // set the drunkeness of our Ant path
     
-    path.setStrokeWidth(2);
+    path.setStrokeWidth(4);
     path.setFilled(false);
-    ofColor yellow(254,ofRandom(100, 214),ofRandom( 50, 100));
+    ofColor yellow(254,ofRandom(100, 255),ofRandom( 10, 255), 50);
     path.setColor(yellow);
 }
 
