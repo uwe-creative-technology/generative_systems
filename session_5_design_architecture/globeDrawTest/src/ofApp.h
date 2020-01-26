@@ -12,6 +12,22 @@
 
 #include "ofMain.h"
 #include "ofxVectorGraphics.h"
+
+ofVec3f sphericalToCartesian( float lat, float lon, float radius );
+
+class ant {
+public:
+    ofPoint startPoint, endPoint, currentPoint, nextPoint;
+    ofPath path;
+    float numDrinks, length, currentLength, acceleration, angularAcceleration, amplitude;
+    ofVec2f velocity;
+    
+    ant();
+    ~ant();
+    void update();
+    ofVec2f getPosition();
+};
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -27,15 +43,14 @@ class ofApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void mouseEntered(int x, int y);
 		void mouseExited(int x, int y);
-
 		
-    ofVec3f sphericalToCartesian( float lat, float lon, float radius );
     ofSpherePrimitive globe;
-    int globeRadius;
     ofEasyCam   cam;
-    vector<ofPoint> points, geoPositions;
+    float driftAmount;
+    vector<ofPoint> geoPositions, cartPositions;
     ofxVectorGraphics vectorGraphics;
     ofPath geoPath;
     ofLight light;
-    
+    // ant ant;
+    vector<ant> ants;
 };
