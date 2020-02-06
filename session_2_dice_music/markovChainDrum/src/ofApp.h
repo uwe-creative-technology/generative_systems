@@ -7,6 +7,8 @@
  https://github.com/danbz
  */
 
+// dependencies: ofxMarkovChain addon //
+
 #pragma once
 
 #include "ofMain.h"
@@ -29,6 +31,6 @@ class ofApp : public ofBaseApp{
 	
     vector<ofSoundPlayer> samples;
     ofxMC::MarkovChain markov;
-    int currentSound;
+    int currentSound, playedListSize;
     vector<int> playedList;
 };
