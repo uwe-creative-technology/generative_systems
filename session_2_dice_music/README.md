@@ -6,11 +6,14 @@ Generative Systems for Art and Design course materials
 
  Examples built in C++ using openFrameworks (openframeworks.cc)
 
-## 2 Dice music - mozart and beyond
+## 2 Dice music - Mozart and beyond
 
 * Techniques: stochastics, randomness and perlin noise, higher level stochastics, markov chains, probability and randomness - 
 * Ideas: lexicons, translations and pattern matching.
 * Demo: all techniques & stubs and loops
+* Random music in the style of 'music for airports'
+* Markov Chain Drum Machine
+* drunken Ant synthesizer
 * Examples: Mozart, Eno, KOAN,
 
 ### reading
@@ -67,3 +70,5 @@ includes eno-esque sounds samples ©Dan Carr :
 care of https://reverbmachine.com/blog/deconstructing-brian-eno-music-for-airports
 
 ![screenshot](randomAudio/screenshot-randomAudio.png)
+![screenshot](markovChainDrum/screenshot-markovChainDrum.png)
+![screenshot](drunkenAntMusic/screenshot-drunkenAntMusic.png)

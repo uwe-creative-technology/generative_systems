@@ -9,6 +9,7 @@ Generative Systems for Art and Design course materials
 * Ideas: generative video editing and paint. making state and extending temporal 'context'
 * Demo: termite agent example built in c++ openFrameworks (openframeworks.cc)
 * inspired by Reas and Fry example in 'Processing:handbook'
+* see also the termite Class example to see how this code works as class objects
 
 ### Agents
 

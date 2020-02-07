@@ -36,6 +36,7 @@ void ofApp::keyPressed(int key){
 void ofApp::drawTree( int x, int y, int apex, int num){
     ofDrawLine(x, y, x, y-apex); // first vertical
     ofDrawLine(x-apex,y-apex,x+apex,y-apex); // first horizontal 
+    
     if (num > 0 ){
         drawTree(x-apex, y-apex, apex/2, num-1); // draw left branch
         drawTree(x+apex, y-apex, apex/2, num-1); // draw right branch

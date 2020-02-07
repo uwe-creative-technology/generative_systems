@@ -12,9 +12,9 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     // uncomment different rule sets to see different CA patterns
-    rules= {0,0,0,1,1,1,1,0}; // pyramid CA
+    // rules= {0,0,0,1,1,1,1,0}; // pyramid CA
     //    rules= {0,0,1,1,0,1,1,0}; // pyramid grid CA
-    //    rules= {0,1,0,1,1,0,1,0}; // pyramid dark CA
+        rules= {0,1,0,1,1,0,1,0}; // pyramid dark CA
     //    rules= {1,0,1,1,0,1,1,0}; // pyramid light CA
     //    rules= {1,0,1,0,0,1,0,1}; // pyramid light CA
     

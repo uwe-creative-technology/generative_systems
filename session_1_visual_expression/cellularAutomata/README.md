@@ -1,6 +1,6 @@
 # Generative Systems for Art and Design
-©2020 Dan Buzzo
-www.buzzo.com
+ ©2020 Dan Buzzo
+ www.buzzo.com
 
 ## 1 Visual expression: generative drawing, weaving and pattern making
 

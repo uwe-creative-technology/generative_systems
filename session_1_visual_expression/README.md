@@ -21,8 +21,8 @@ https://www.youtube.com/watch?v=ecP9BLg9D88
 https://www.youtube.com/watch?v=IPczQgCuOOc
 https://www.youtube.com/watch?v=MwHQx9BrHQc
 * John Whitney https://www.youtube.com/watch?v=TbV7loKp69s
-* L systems: Prusinkiewicz, Lindenmayer - 1990 - The Algorithmic Beauty of Plants
 * markov chains : http://setosa.io/ev/markov-chains/
+* Carl Lostrito.'Computational Drawing' 2019, Pub. Applied Research and Design
 
 ### Stochastic processes
 
@@ -30,14 +30,21 @@ https://www.youtube.com/watch?v=MwHQx9BrHQc
 * Markov Chain for drawing
 * Active Drawing
 * Cellular Automata 1D and 2D
+* DrunkenAnt Path
+  
+### Recursion
+ * recursionTree
+ * recursionDots
 
+### Agents
+* termite Agents
+* termites as a class
+  
 ![screenshot](activeDrawing/screenshot-activeDrawing.png)
 ![screenshot](cellularAutomata/screenshot-CA.png)
 ![screenshot](cellularAutomata2D/screenshot-CA2D.png)
 ![screenshot](randomWalker/screenshot-randomWalker.png)
 ![screenshot](colorPalettes/screenshot-colorPalettes.png)
-
-
-
-
-
+![screenshot](drunkenAnt/screenshot-drunkenAnt.png)
+![screenshot](recursionTree/screenshot-recursionTree.png)
+![screenshot](termiteAgents/screenshot-termiteAgents.png)
