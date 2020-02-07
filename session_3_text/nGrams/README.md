@@ -20,3 +20,4 @@ the system then generates a markov chain text of a specified length from a start
 
 'space' to process text into ngrams and generate new text
 'l' to load text file of type .txt from disk as new source text
+[!screenshot](screenshot-nGrams.png)

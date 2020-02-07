@@ -41,8 +41,8 @@ www.buzzo.com
 
 * Techniques: text sorting, automatic and generative poetry, interactive story structure
 * Ideas: Grammar and variation
-* Demo: Markov chain text, lexical searches, nGrams 
-* Examples: TSR chooose your own adventure, exquisite corpse, 
+* Demo: Markov chain text, lexical searches, generating nGrams, automatic writing from grammar structure, POS (part of speech) and lexicons
+* Examples: TSR chooose your own adventure, exquisite corpse
 
 ## 4 Procedural generation of environments
 
@@ -51,7 +51,7 @@ www.buzzo.com
 * Demo: Unity3D, 
 * Examples: Alex Birke - Unity etc
 
-## 5 Generative systems in industrial design and architecture. 
+## 5 Generative systems in industrial design and architecture.
 
 * Techniques:
 * Ideas:
@@ -140,4 +140,5 @@ CC1 Present video documentation and demonstration
 ![screenshot](session_1_visual_expression/drunkenAnt/screenshot-drunkenAnt.png)
 ![screenshot](session_2_dice_music/randomAudio/screenshot-randomAudio.png)
 ![screenshot](session_2_dice_music/markovChainDrum/screenshot-markovChainDrum.png)
+![screenshot](session_3_text/automaticWriting/screenshot-automaticWriting.png)
 

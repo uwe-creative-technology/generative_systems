@@ -25,5 +25,5 @@ Generative Systems for Art and Design course materials
 * 'r' to reset ant
 
 
-![screenshot](screenshot-drunkenAntMusic.png)
+![screenshot](screenshot-DrunkenAntMusic.png)
 

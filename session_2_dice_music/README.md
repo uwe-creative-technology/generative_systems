@@ -71,4 +71,4 @@ care of https://reverbmachine.com/blog/deconstructing-brian-eno-music-for-airpor
 
 ![screenshot](randomAudio/screenshot-randomAudio.png)
 ![screenshot](markovChainDrum/screenshot-markovChainDrum.png)
-![screenshot](drunkenAntMusic/screenshot-drunkenAntMusic.png)
+![screenshot](drunkenAntMusic/screenshot-DrunkenAntMusic.png)
