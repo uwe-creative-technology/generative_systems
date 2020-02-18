@@ -43,23 +43,18 @@ dancing markov Gymnopédies https://codepen.io/teropa/pen/bRqYVj
 
 terry riley in c https://teropa.info/blog/2017/01/23/terry-rileys-in-c.html
 
+* "Minimalist Piano Forever" by Mouse Reeve : French composer Erik Satie was the forefather of avant-garde music, the founder of a one-man occult sect, and the inventor of entirely new genres for his hauntingly repetitive, minimalist piano works. Personally, I could listen to his "Gnossiennes" forever, so I created a way to do so, using digital sheet music, markov chains, and browser-based midi to create a generative, unending Gnossienne. This talk will explore the strategies, algorithms, and libraries I used to go from 19th and 20th century piano music to generative audio and on-the-fly sheet music in the browser. It features forays into topics ranging from how to make computer generated music sound more natural, to Erik Satie's very peculiar life. https://www.youtube.com/watch?v=ANYMii3Sypg 
+
+* Loops, phasing   Brian Eno
+* Randomness, chance procedures  John Cage
+* Algorithmic, cellular automata  Iannis Xenakis
+* Interactive, augmentative  Laurie Spiegel
+* Learning based, Markov chains   Hiller & Isaacson
 
 
-Loops, phasing   Brian Eno
-Randomness, chance procedures  John Cage
-Algorithmic, cellular automata  Iannis Xenakis
-Interactive, augmentative  Laurie Spiegel
-Learning based, Markov chains   Hiller & Isaacson
-
-
-deconstructing Music for Airports 
-https://reverbmachine.com/blog/deconstructing-brian-eno-music-for-airports
-
-In this video, via the BBC, Brian Eno discusses some of the techniques behind his music and demonstrates his current setup for creating and ‘tuning’ systems for creating ambient soundscapes.
-
-While the video focuses primarily on the aleatory processes Eno uses, attentive viewers will note that Eno emphasizes his process of listening and refining his compositional rules to meet his aesthetic goals. 
-https://youtu.be/cv7epY75Wa0
-
+* deconstructing Music for Airports 
+ * https://reverbmachine.com/blog/deconstructing-brian-eno-music-for-airports
+ * In this video, via the BBC, Brian Eno discusses some of the techniques behind his music and demonstrates his current setup for creating and ‘tuning’ systems for creating ambient soundscapes. While the video focuses primarily on the aleatory processes Eno uses, attentive viewers will note that Eno emphasizes his process of listening and refining his compositional rules to meet his aesthetic goals.  https://youtu.be/cv7epY75Wa0
 
 ### tools 
 
@@ -68,6 +63,8 @@ http://notahat.com/simplesynth/ free simple synthesizer
 
 includes eno-esque sounds samples ©Dan Carr : 
 care of https://reverbmachine.com/blog/deconstructing-brian-eno-music-for-airports
+
+
 
 ![screenshot](randomAudio/screenshot-randomAudio.png)
 ![screenshot](markovChainDrum/screenshot-markovChainDrum.png)
