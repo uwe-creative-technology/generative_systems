@@ -12,8 +12,12 @@ Generative Systems for Art and Design course materials
 * Demo: Markov chain text, lexical searches. 
   * nGrams and generating models for markov chains
   * screenshot-automaticWriting.png
+  * text Drift - manipulating text font characetr outlines
+  * textSortingManipulation sorting and scaling text based upon sort order
 * Examples: TSR chooose your own adventure, exquisite corpse, 
   
 
 [!screenshot](nGrams/screenshot-nGrams.png)
 ![screenshot](automaticWriting/screenshot-automaticWriting.png)
+![screenshot](textDrift/screenshot-textDrift.png)
+![screenshot](textSortingManipulation/screenshot-textSortingManipulation.png)
