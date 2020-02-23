@@ -141,4 +141,7 @@ CC1 Present video documentation and demonstration
 ![screenshot](session_2_dice_music/randomAudio/screenshot-randomAudio.png)
 ![screenshot](session_2_dice_music/markovChainDrum/screenshot-markovChainDrum.png)
 ![screenshot](session_3_text/automaticWriting/screenshot-automaticWriting.png)
+[!screenshot](session_3_text/nGrams/screenshot-nGrams.png)
+![screenshot](session_3_text/textDrift/screenshot-textDrift.png)
+![screenshot](session_3_text/textSortingManipulation/screenshot-textSortingManipulation.png)
 
