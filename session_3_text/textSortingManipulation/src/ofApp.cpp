@@ -34,8 +34,6 @@ void ofApp::setup() {
     ofSetBackgroundColor(255);
     ofSetColor(0); // set  the words to black
     ofNoFill();
-
-
 }
 
 //--------------------------------------------------------------
@@ -46,9 +44,9 @@ void ofApp::update() {
 //--------------------------------------------------------------
 void ofApp::draw() {
     int offset = 10;
-    int startHeight = 70;
+    int startHeight = 50;
     int wordMargin = 10;
-    int lineHeight = 30;
+    int lineHeight = 20;
     int wordX, wordY = 10;
     int lineNum = 0;
     for(unsigned int i=0; i<words.size(); i++) {
@@ -58,11 +56,12 @@ void ofApp::draw() {
         wordY = offset / ofGetWidth() * font.getLineHeight() + 20;
         lineHeight = startHeight -  offset / ofGetWidth();
         font.setLineHeight(lineHeight);
-//        ofPushMatrix();
+//        ofPushMatrix(); // scale each word depending upon the order we see it
 //        ofTranslate(wordX, wordY );
 //        ofScale(lineHeight/20, lineHeight/20);
+        
          font.drawString(words[i].word, wordX , wordY );
-        // ofDrawRectangle(rect.x + wordX - wordMargin/2 , rect.y + wordY, rect.width + wordMargin, lineHeight );
+         ofDrawRectangle(rect.x + wordX - wordMargin/2 , rect.y + wordY, rect.width + wordMargin, lineHeight );
 
 //        font.drawString(words[i].word, 0 , 0 );
 //        ofDrawRectangle(rect.x  - wordMargin/2 , rect.y , rect.width + wordMargin, lineHeight );
@@ -114,7 +113,6 @@ void ofApp::keyPressed  (int key){
     
     if (key == 'w'){
         ofHttpResponse loadResult = ofLoadURL("http://www.google.com/robots.txt");
-        cout << "my awesome loadresult: " << endl;
         urlResponse(loadResult);
     }
     
@@ -168,8 +166,7 @@ void ofApp::setupWords(string content){
         words.push_back(wrd);
     }
     
-    // clean up the words removing any
-    // characters that we do not want
+    // clean up the words removing any characters that we do not want
     for (unsigned int i=0; i<words.size(); i++) {
         // run throught this ignore list and replace
         // that char with nothing
@@ -206,21 +203,14 @@ void ofApp::setupWords(string content){
             tempWord.push_back(words[i]);
         }
     }
-    
     words = tempWord;
-    
-    // remove word we do not want
-   // ofRemove(words, ofApp::removeWordIf);
 }
 
 //--------------------------------------------------------------
-
-
 void ofApp::urlResponse(ofHttpResponse & response){
     if(response.status==200 ){
         // if our web request works the set up the text returned
         string   content = response.data;
-        cout << "my awesome response request name parsed" << ofToString( response.request.name)  << endl;
         setupWords(content);
         loading=false;
     }else{
@@ -245,26 +235,4 @@ bool ofApp::sortOnLength(const LyricWord &a, const LyricWord &b) {
 //--------------------------------------------------------------
 bool ofApp::sortOnOccurrences(const LyricWord &a, const LyricWord &b) {
     return a.occurrences > b.occurrences;
-}
-
-
-// remove function
-//--------------------------------------------------------------
-bool ofApp::removeWordIf(LyricWord &wrd) {
-    
-    bool bRemove = false;
-    // static string ignoreWords[11] = {"the", "to", "of", "a", "and", "i", "it", "if", "is", "in", "be"};
-    static string ignoreWords[0] = {};
-
-    // if this word empty
-    if(wrd.word.empty()) bRemove = true;
-    
-    // are we a word that we do now want
-    for (int j=0; j<11; j++) {
-        if(wrd.word == ignoreWords[j]) {
-            bRemove = true;
-            break;
-        }
-    }
-    return bRemove;
 }

@@ -36,9 +36,7 @@ public:
     
     static bool sortOnABC(const LyricWord &a, const LyricWord &b);
     static bool sortOnOccurrences(const LyricWord &a, const LyricWord &b);
-    static bool sortOnLength(const LyricWord &a, const LyricWord &b);
-    static bool removeWordIf(LyricWord &wrd);
-    
+    static bool sortOnLength(const LyricWord &a, const LyricWord &b);    
     
     ofTrueTypeFont      font;
     string              sortTypeInfo;
