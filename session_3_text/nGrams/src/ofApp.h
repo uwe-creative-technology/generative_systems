@@ -25,9 +25,12 @@ public:
     void makeText();
     bool loadTextFromFile();
     
+    void prepareText();
+    void createGrams();
+    
     string sourceText, markovText;
     vector<string> allGrams;
     vector<vector<string>> uniqueGrams;
-    int gramLength;
+    int gramLength, numLetters;
     ofxTextBlock screenText;
 };
