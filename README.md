@@ -46,10 +46,10 @@ www.buzzo.com
 
 ## 4 Procedural generation of environments
 
-* Techniques: TBC
-* Ideas: TBC
-* Demo: Unity3D, 
-* Examples: Alex Birke - Unity etc
+* Techniques: parameterization and lSystems for algorithmic plant growth
+* Ideas: parameters and patterns
+* Demo: procedural chairs, procedural forest, 
+* Examples: parameterised architecture, procedural level generation
 
 ## 5 Generative systems in industrial design and architecture.
 
@@ -146,4 +146,6 @@ CC1 Present video documentation and demonstration
 ![screenshot](session_3_text/textDrift/screenshot-textDrift.png)
 ![screenshot](session_3_text/textSortingManipulation/screenshot-textSortingManipulation.png)
 ![screenshot](session_4_procedural_environments/parameterizeChair/screenshot-parameterizeChair.png)
+![screenshot](session_4_procedural_environments/forestL-System/screenshot-forestL-System.png)
+
 
