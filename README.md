@@ -97,6 +97,7 @@ CC1 Present video documentation and demonstration
 * Processing. Casey Reas
 * Generative Design
 * Form and code
+* https://www.artnome.com/news/2018/8/8/why-love-generative-art 
 
 ## Recommended reading
 
@@ -144,4 +145,5 @@ CC1 Present video documentation and demonstration
 [!screenshot](session_3_text/nGrams/screenshot-nGrams.png)
 ![screenshot](session_3_text/textDrift/screenshot-textDrift.png)
 ![screenshot](session_3_text/textSortingManipulation/screenshot-textSortingManipulation.png)
+![screenshot](session_4_procedural_environments/parameterizeChair/screenshot-parameterizeChair.png)
 
