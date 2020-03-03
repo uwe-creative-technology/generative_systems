@@ -32,6 +32,11 @@ void ofApp::setup(){
     cam.setPosition(-100, 50, 300);
     ofVec3f centre(0,0,0);
     cam.lookAt(centre);
+    
+    ofDisableArbTex(); // important to call this before we load our texture
+    // allocate an image as a surface texture
+    string textureName = "woodgrain.jpeg";
+    ofLoadImage(texture, textureName);
     ofEnableDepthTest();
 }
 
@@ -47,7 +52,6 @@ void ofApp::draw(){
     ofPushMatrix();
     ofRotateDeg(180, 0, 0, 1);
     ofTranslate(- chairWidth/2, -chairSeatHeight);
-
     drawChair();
     ofPopMatrix();
     light.disable();
@@ -57,11 +61,14 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::drawChair(){
+     texture.bind(); // start the wood texture
     
     //back
     ofPushMatrix();
     ofTranslate(chairWidth/2, chairBackHeight/2, 0);
+   
     ofDrawBox(0, 0, 0, chairWidth, chairBackHeight, chairFrameThickness);
+
     ofPopMatrix();
     
     //seat
@@ -69,7 +76,6 @@ void ofApp::drawChair(){
     ofTranslate(chairWidth/2, chairBackHeight + chairFrameThickness/2,
                 chairDepth/2 - chairFrameThickness/2);
     ofDrawBox(0, 0, 0, chairWidth, chairFrameThickness, chairDepth);
-    
     ofPopMatrix();
     
     //legs
@@ -95,6 +101,8 @@ void ofApp::drawChair(){
                 chairDepth - chairFrameThickness);
     ofDrawBox(0, 0, 0, chairFrameThickness, chairSeatHeight, chairFrameThickness);
     ofPopMatrix();
+    texture.unbind(); // stop the wood texture
+
 }
 
 void ofApp::scrambleChair(){

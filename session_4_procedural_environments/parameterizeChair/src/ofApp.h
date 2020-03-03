@@ -30,4 +30,5 @@ public:
     
     ofEasyCam cam;
     ofLight light;
+    ofTexture texture;
 };
