@@ -26,7 +26,7 @@ public:
     
     void scrambleChair();
     void drawChair();
-    int chairSeatHeight, chairWidth, chairDepth, chairBackHeight,chairFrameThickness;
+    int chairSeatHeight, chairWidth, chairDepth, chairBackHeight, chairFrameThickness;
     
     ofEasyCam cam;
     ofLight light;

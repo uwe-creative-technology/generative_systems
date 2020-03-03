@@ -26,17 +26,18 @@ void ofApp::setup(){
     
     ofBackground(255, 255, 255);
     ofSetColor(100, 100, 200);
-    light.setPosition(-100, 500, 500);
+    light.setPosition(-100, 500, 500); // make a light to light our 3D scene
     light.setPointLight();
     
-    cam.setPosition(-100, 50, 300);
+    cam.setPosition(-100, 50, 300); // set the position of our easyCam
     ofVec3f centre(0,0,0);
     cam.lookAt(centre);
     
     ofDisableArbTex(); // important to call this before we load our texture
     // allocate an image as a surface texture
-    string textureName = "woodgrain.jpeg";
+    string textureName = "woodgrain.jpeg"; // import an image to be a texture for our chair
     ofLoadImage(texture, textureName);
+    
     ofEnableDepthTest();
 }
 
@@ -49,21 +50,27 @@ void ofApp::update(){
 void ofApp::draw(){
     cam.begin();
     light.enable();
+    
     ofPushMatrix();
     ofRotateDeg(180, 0, 0, 1);
     ofTranslate(- chairWidth/2, -chairSeatHeight);
+    
     drawChair();
+    
     ofPopMatrix();
+    
     light.disable();
     cam.end();
+    
     ofDrawBitmapString("press spacebar to make new chair, 'f' for fullscreen", 20, ofGetHeight() - 40);
 }
 
 //--------------------------------------------------------------
 void ofApp::drawChair(){
+    // draw all the boxes that make up our chair
      texture.bind(); // start the wood texture
     
-    //back
+    // make the back
     ofPushMatrix();
     ofTranslate(chairWidth/2, chairBackHeight/2, 0);
    
@@ -71,14 +78,14 @@ void ofApp::drawChair(){
 
     ofPopMatrix();
     
-    //seat
+    // make the seat
     ofPushMatrix();
     ofTranslate(chairWidth/2, chairBackHeight + chairFrameThickness/2,
                 chairDepth/2 - chairFrameThickness/2);
     ofDrawBox(0, 0, 0, chairWidth, chairFrameThickness, chairDepth);
     ofPopMatrix();
     
-    //legs
+    // make the legs
     ofPushMatrix();
     ofTranslate(chairFrameThickness/2, chairBackHeight + chairSeatHeight/2 + chairFrameThickness, 0);
     ofDrawBox(0, 0, 0, chairFrameThickness, chairSeatHeight, chairFrameThickness);
@@ -94,15 +101,16 @@ void ofApp::drawChair(){
     ofPushMatrix();
     ofTranslate(chairWidth - chairFrameThickness/2,
                 chairBackHeight + chairSeatHeight/2 + chairFrameThickness, chairDepth - chairFrameThickness);
-    ofDrawBox(0, 0, 0, chairFrameThickness, chairSeatHeight, chairFrameThickness);    ofPopMatrix();
+    ofDrawBox(0, 0, 0, chairFrameThickness, chairSeatHeight, chairFrameThickness);
+    ofPopMatrix();
     
     ofPushMatrix();
     ofTranslate(chairFrameThickness/2, chairBackHeight + chairSeatHeight/2 + chairFrameThickness,
                 chairDepth - chairFrameThickness);
     ofDrawBox(0, 0, 0, chairFrameThickness, chairSeatHeight, chairFrameThickness);
     ofPopMatrix();
+    
     texture.unbind(); // stop the wood texture
-
 }
 
 void ofApp::scrambleChair(){
