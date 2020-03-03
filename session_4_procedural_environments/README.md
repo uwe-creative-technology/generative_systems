@@ -15,4 +15,6 @@ Generative Systems for Art and Design course materials
 ![screenshot](screenshot-lSystemTree.png)
 ![screenshot](forestL-System/screenshot-forestL-System.png)
 ![screenshot](parameterizeChair/screenshot-parameterizeChair.png)
+![screenshot](parameterizeWaves/screenshot-parameterizeWaves.png)
+
 
