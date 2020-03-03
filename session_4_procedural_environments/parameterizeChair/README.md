@@ -15,4 +15,4 @@ updated March 2020 dan buzzo
  * For more information about Form+Code visit http://formandcode.com
  
 
-!screenshot(screenshot-parameterizeChair.png)
+![screenshot](screenshot-parameterizeChair.png)
