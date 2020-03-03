@@ -29,7 +29,9 @@ void ofApp::setup(){
     light.setPosition(-100, 500, 500);
     light.setPointLight();
     
-    cam.setPosition(0, 0, 300);
+    cam.setPosition(-100, 50, 300);
+    ofVec3f centre(0,0,0);
+    cam.lookAt(centre);
     ofEnableDepthTest();
 }
 
