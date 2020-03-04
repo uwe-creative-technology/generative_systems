@@ -31,14 +31,16 @@ void ofApp::setup(){
     
     cam.setPosition(-100, 50, 300); // set the position of our easyCam
     ofVec3f centre(0,0,0);
+    
     cam.lookAt(centre);
     
     ofDisableArbTex(); // important to call this before we load our texture
     // allocate an image as a surface texture
     string textureName = "woodgrain.jpeg"; // import an image to be a texture for our chair
     ofLoadImage(texture, textureName);
-    
+
     ofEnableDepthTest();
+    light.enable();
 }
 
 //--------------------------------------------------------------
@@ -48,34 +50,24 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    cam.begin();
-    light.enable();
-    
-    ofPushMatrix();
-    ofRotateDeg(180, 0, 0, 1);
-    ofTranslate(- chairWidth/2, -chairSeatHeight);
-    
+    cam.begin(); // start our 3d camera controls
     drawChair();
-    
-    ofPopMatrix();
-    
-    light.disable();
     cam.end();
-    
     ofDrawBitmapString("press spacebar to make new chair, 'f' for fullscreen", 20, ofGetHeight() - 40);
 }
 
 //--------------------------------------------------------------
 void ofApp::drawChair(){
     // draw all the boxes that make up our chair
-     texture.bind(); // start the wood texture
+    ofTranslate( chairWidth/2, chairSeatHeight); // move to draw chair in middle at 0,0,0
+    ofRotateDeg(180, 0, 0, 1); // chair is upsidedown rotate in z axis to set it right way up
+
+    texture.bind(); // start the wood texture, this will be wrapped to any 3d shape we draw until we unbind the texture.
     
     // make the back
     ofPushMatrix();
     ofTranslate(chairWidth/2, chairBackHeight/2, 0);
-   
     ofDrawBox(0, 0, 0, chairWidth, chairBackHeight, chairFrameThickness);
-
     ofPopMatrix();
     
     // make the seat

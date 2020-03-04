@@ -86,9 +86,14 @@ void ofApp::makeText(){
     // need to fix this as it crashes if it gets to a null gram at the end (eg breeze)
     for (int i=0; i<numLetters; i++){
         for (int j = 0; j < uniqueGrams.size(); j++){
+           // if (startText.length()
             if (uniqueGrams[j][0] == startText.substr(i,gramLength)){
                 nextLetter = uniqueGrams[j][ofRandom(uniqueGrams[j].size()-1 ) +1 ];
-                cout << nextLetter << endl;
+                // if (!nextLetter == "") {
+                cout << "letter '" << nextLetter << "'" << endl;
+//                } else {
+//                    cout << "no ngram" << endl;
+//                }
                 startText+= nextLetter;
             }
         }
@@ -139,10 +144,10 @@ void ofApp::prepareText(){
 
 void ofApp::createGrams(){
     // generate a vector of all grams
-    allGrams.clear(); // clear the previous grams in case we are loading a new source text file
+    allGrams.clear(); // clear the previous grams in case we are loading a new source textfile
     uniqueGrams.clear();
     
-    for (int i = 0; i < sourceText.length()-gramLength; i++){
+    for (int i = 0; i < sourceText.length()-gramLength +1; i++){
         string newGram = sourceText.substr(i, gramLength);
         allGrams.push_back(newGram);
     }
@@ -163,17 +168,17 @@ void ofApp::createGrams(){
         string gram = uniqueGrams[i][0];
         
         int pos = sourceText.find(gram);
-        if (pos != sourceText.length()){
+        if (pos != sourceText.length() ){ // here?
             // uniqueGrams[i].push_back(sourceText.substr(pos + gramLength, 1));
             size_t pos = sourceText.find(gram);
             // Repeat till end is reached
             cout << gram << " gram: " ;
             while( pos != std::string::npos) {
-                //           // Add position to the vector
+                // Add position to the vector
                 uniqueGrams[i].push_back(sourceText.substr(pos + gramLength, 1));
                 cout << sourceText.substr(pos + gramLength, 1) ;
                 
-                //           // Get the next occurrence from the current position
+                // Get the next occurrence from the current position
                 pos =sourceText.find(gram, pos + gram.size());
             }
             cout << endl;

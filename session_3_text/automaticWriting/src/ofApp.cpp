@@ -12,7 +12,7 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     
-    numOfSentences = 10;
+    numOfSentences = 20;
     screenText.init("frabk.ttf", 20);
     screenText.wrapTextX(ofGetWidth());
     
