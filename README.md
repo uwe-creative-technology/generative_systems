@@ -10,7 +10,7 @@ www.buzzo.com
   - [3 Text and narrative](#3-text-and-narrative)
   - [4 Procedural generation of environments](#4-procedural-generation-of-environments)
   - [5 Generative systems in industrial design and architecture.](#5-generative-systems-in-industrial-design-and-architecture)
-  - [6 Machine learning and AI in art and design](#6-machine-learning-and-ai-in-art-and-design)
+  - [6 The Thing that Makes the Thing is More Interesting than the Thing](#6-the-thing-that-makes-the-thing-is-more-interesting-than-the-thing)
   - [Code each week & video](#code-each-week--video)
 - [Assignment](#assignment)
 - [Tool and system links](#tool-and-system-links)
@@ -58,12 +58,12 @@ www.buzzo.com
 * Demo:
 * Examples: Autodesk, Engineering etc
 
-## 6 Machine learning and AI in art and design
+## 6 The Thing that Makes the Thing is More Interesting than the Thing
 
-* Techniques: GAN, Convolutional Neural nets, machine vision, deep learning
-* Ideas:  pattern training
+* Techniques: where the art lies in the art?
+* Ideas:  where the interest lies in the thing?
 * Demo:
-* Examples: Anne Riddler, Memo Akten, Manolo, Golan Levin
+* Examples: casey reas, vera molnar, zach lieberman
 
 ## Code each week & video 
 
